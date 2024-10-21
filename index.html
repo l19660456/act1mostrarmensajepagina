@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje Motivacional</title>
+    <script>
+        // JavaScript que se ejecuta al cargar la página
+        window.onload = function() {
+            // Array de mensajes motivacionales
+            const mensajes = [
+                "¡La programación no me gusta!",
+            ];
+
+            // Selecciona un mensaje aleatorio del array
+            const mensajeAleatorio = mensajes[Math.floor(Math.random() * mensajes.length)];
+
+            // Cambia el contenido de la etiqueta h1 con el mensaje aleatorio
+            document.getElementById("mensajeMotivacional").innerText = mensajeAleatorio;
+        };
+    </script>
+</head>
+<body>
+    <h1 id="mensajeMotivacional"></h1> <!-- Etiqueta de texto con el ID "mensajeMotivacional" -->
+</body>
+</html>
